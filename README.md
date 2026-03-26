@@ -48,31 +48,6 @@ Timestamped logs and cumulative task counters provide transparency and auditabil
 
 ---
 
-## System Architecture Diagram
-
-
-┌─────────────────────┐
-│ main.py Entry │
-└─────────┬───────────┘
-│
-▼
-┌─────────────────────┐
-│ Agent Orchestrator │
-│ Sequential Tasks │
-│ Monte Carlo Logic │
-└─────┬───────────────┘
-│
-▼
-┌───────────────┐ ┌───────────────┐
-│ Collect Data │ -> │ Analyze Data │ -> ...
-└───────────────┘ └───────────────┘
-│
-▼
-┌─────────────────────┐
-│ JSON State Tracking │
-│ example.json │
-└─────────────────────┘
-
 
 ---
 
@@ -80,7 +55,7 @@ Timestamped logs and cumulative task counters provide transparency and auditabil
 
 1. **Clone the repository**
 
-```bash
+
 git clone https://github.com/andykalr/Claude-Agent-Automator-Pro.git
 cd Claude-Agent-Automator-Pro
   2. Create and activate a virtual environment
