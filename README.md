@@ -55,18 +55,26 @@ Timestamped logs and cumulative task counters provide transparency and auditabil
 
 1. **Clone the repository**
 
-
 git clone https://github.com/andykalr/Claude-Agent-Automator-Pro.git
+
 cd Claude-Agent-Automator-Pro
+
   2. Create and activate a virtual environment
 python -m venv venv
+
 venv\Scripts\activate   # Windows
-  3. Install dependencies
+
+  4. Install dependencies
+     
 pip install -r requirements.txt
-  4. Set up API credentials
+
+  5. Set up API credentials
+     
 Copy .env.example.txt to .env and insert your Claude API key:
+
 CLAUDE_API_KEY=your_api_key_here
-Usage & Execution
+
+## Usage & Execution
 
 Run the orchestrator:
 python main.py
@@ -80,7 +88,7 @@ Sample Output
 [Helper] Task 'Generate report' completed. Total tasks: 3
 [Helper] All tasks done. Total completed: 3, Last run: 2026-03-26T00:53:27
 
-Advanced Concepts
+## Advanced Concepts
 1. Monte Carlo-Inspired Reliability Modelling
 Each task carries a stochastic success probability. Multiple runs allow statistical analysis of expected task completion times and reliability.
 
